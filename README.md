@@ -28,6 +28,7 @@ Bundle install
 
 Add the Article Model:
 ```bash
+
 rails g scaffold article title:string description:string
 ```
 
@@ -65,3 +66,24 @@ rails g bootstrap:layout application fluid
 
 Modify the Layout to give access to Objects on top and New Article on the left
 
+*Step 3*
+
+Create a Contact Model connected to Salesforce
+
+Add the Contact Model
+```bash
+rails g scaffold Contact firstname:string lastname:string email:string
+```
+
+Run migration (only locally as heroku Connect will create that Table remotely)
+```bash
+rake db:migrate
+```
+
+Update the Model
+```ruby
+self.table_name = "salesforce.contact"
+```
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
