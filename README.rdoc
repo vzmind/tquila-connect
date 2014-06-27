@@ -5,23 +5,22 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Step 1
 
-* System dependencies
+* Step 2
 
-* Configuration
+install Bootstrap
 
-* Database creation
+Add this to the Gemfile:
+gem "twitter-bootstrap-rails"
 
-* Database initialization
+Run the install command
+rails generate bootstrap:install static
 
-* How to run the test suite
+Add a default layout
+rails g bootstrap:layout application fluid
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Modify the Layout to give access to Objects on top and New Article on the left
 
 
 Please feel free to use a different markup language if you do not plan to run
