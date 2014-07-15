@@ -61,6 +61,14 @@ class ContactsController < ApplicationController
     end
   end
 
+  def search
+    @search = Contact.search{keywords params['search']}
+    respond_to do |format|
+      format.html { render :search  }
+      format.json { head :no_content }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_contact

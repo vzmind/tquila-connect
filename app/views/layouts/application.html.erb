@@ -63,7 +63,10 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Add Article", "articles/new"  %></li>
+              <%= form_tag(search_contacts_path) do -%>
+                <div><%= text_field_tag 'search' %></div>
+                <div><%= submit_tag 'go' %></div>
+              <% end -%>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
