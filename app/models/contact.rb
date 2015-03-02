@@ -3,6 +3,5 @@ class Contact < ActiveRecord::Base
 	searchable do
     text    :firstname
     text		:lastname
-    text		:qualification
   end
 end

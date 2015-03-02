@@ -1,0 +1,21 @@
+{
+  "name": "Tquila Test",
+  "description": "Search engine + Heroku Connect test app",
+  "keywords": [
+    "small",
+    "sharp",
+    "tool"
+  ],
+  "addons": [
+    "herokuconnect:demo",
+    "logentries:tryit",
+    "heroku-postgresql:hobby-dev",
+    "websolr:cobalt"
+  ],
+  "env": {
+    "LANG": "en_US.UTF-8",
+    "RAILS_ENV": "production",
+    "RACK_ENV": "production",
+    "SECRET_KEY_BASE": "REDACTED"
+  }
+}
