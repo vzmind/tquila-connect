@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :contacts
+  resources :contacts do
+    collection do
+      post 'search'
+    end
+  end
 
   resources :articles
 

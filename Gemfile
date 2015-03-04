@@ -32,6 +32,8 @@ gem 'pg'
 
 gem 'rails_12factor', group: :production
 
+gem 'sunspot_rails', '~> 2.1.1'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
